@@ -5,65 +5,89 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:orientation="vertical"
+        android:id="@+id/email_login_form"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/your_personal_details"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:textSize="22sp"
-        android:textColor="#FAFAFA"/>
+        <ImageView
+            android:layout_width="375dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/image_desing"/>
 
-
-    <LinearLayout
-        android:layout_gravity="center"
-        android:layout_width="310dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/design_item">
-
-        <LinearLayout
-            android:layout_margin="5dp"
-            android:orientation="vertical"
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="25dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/frist_name"
-                android:layout_marginTop="5dp"
-                android:layout_gravity="center"
-                android:textSize="12sp"
-                android:visibility="invisible"
-                android:textColor="#FAFAFA"/>
+            android:layout_height="wrap_content">
 
             <EditText
-                android:layout_width="325dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
+                android:id="@+id/ed_email_logind"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawablePadding="8dp"
                 android:gravity="center"
-                android:hint="@string/frist_name"
-                android:textColor="#FAFAFA"
-                android:textColorHint="#FAFAFA"
+                android:layout_gravity="center"
+                android:textColorHint="#757070"
+                android:hint="@string/email"
+                android:textSize="15sp"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
-                android:singleLine="true"
-                android:textSize="15sp" />
+                android:singleLine="true"/>
 
+        </android.support.design.widget.TextInputLayout>
 
-        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ed_password_logind"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:textColorHint="#757070"
+                android:layout_gravity="center"
+                android:hint="@string/password"
+                android:textSize="15sp"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_sign_in_logind"
+            android:layout_width="215dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_design_profile"
+            android:gravity="center"
+            android:text="@string/sign_in"
+            android:textAllCaps="true"
+            android:textColor="#fffbfbfe" />
+
+        <Button
+            android:id="@+id/btn_intent_signup_logind"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_link_signup"
+            android:background="@null"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/black"/>
 
 
     </LinearLayout>
 
 </LinearLayout>
 
-</LinearLayout>

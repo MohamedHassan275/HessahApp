@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HessahApp</string>
+    <string name="app_name">Hessah Store</string>
 
     <string name="error_invalid_email" translatable="false">This email address is invalid</string>
     <string name="error_invalid_password" translatable="false">This password is too short</string>

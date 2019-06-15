@@ -17,7 +17,7 @@ import android.widget.Spinner;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    Button Login, Register;
+    Button Btn_Login, Btn_Register;
     EditText Password,ConfirmPassword;
     Spinner SpinnerCountry, SpinnerRegion_State;
     CheckBox checkBoxShowPassword,checkBoxThePrivacy;
@@ -30,8 +30,8 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        Login = findViewById(R.id.btn_sign_up_register);
-        Register = findViewById(R.id.btn_login_register);
+        Btn_Register = findViewById(R.id.btn_sign_up_register);
+        Btn_Login = findViewById(R.id.btn_login_register);
         SpinnerCountry = findViewById(R.id.spinnerCountry);
         SpinnerRegion_State = findViewById(R.id.spinnerRegion_State);
         checkBoxShowPassword = findViewById(R.id.Ch_ShowPassword);
@@ -63,14 +63,14 @@ public class RegisterActivity extends AppCompatActivity {
                 // checkbox status is changed from uncheck to checked.
                 if (!isChecked) {
                     // show password
-                    Login.setEnabled(false);
-                    Login.setTextColor(Color.parseColor("#555557"));
+                    Btn_Register.setEnabled(false);
+                    Btn_Register.setTextColor(Color.parseColor("#555557"));
 
 
                 } else {
                     // hide password
-                    Login.setEnabled(true);
-                    Login.setTextColor(Color.parseColor("#fffbfbfe"));
+                    Btn_Register.setEnabled(true);
+                    Btn_Register.setTextColor(Color.parseColor("#fffbfbfe"));
 
                 }
             }
@@ -99,7 +99,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        Login.setOnClickListener(new View.OnClickListener() {
+        Btn_Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -109,11 +109,11 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        Register.setOnClickListener(new View.OnClickListener() {
+        Btn_Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(RegisterActivity.this,LoginActivity.class);
+                Intent intent = new Intent(RegisterActivity.this,HomeScreen.class);
                 startActivity(intent);
 
             }

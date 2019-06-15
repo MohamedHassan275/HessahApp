@@ -157,24 +157,9 @@
                     android:textSize="15sp"
                     android:hint="@string/address1"/>
             </android.support.design.widget.TextInputLayout>
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/signup_input_city"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp">
-                <android.support.design.widget.TextInputEditText
-                    android:id="@+id/Ed_reg_city"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:inputType="text"
-                    android:singleLine="true"
-                    android:ems="10"
-                    android:textSize="15sp"
-                    android:hint="@string/city"/>
-            </android.support.design.widget.TextInputLayout>
+
             <LinearLayout
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -224,7 +209,22 @@
 
             </LinearLayout>
 
-
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/signup_input_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Ed_reg_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:ems="10"
+                    android:textSize="15sp"
+                    android:hint="@string/city"/>
+            </android.support.design.widget.TextInputLayout>
 
             <ProgressBar
                 android:id="@+id/m_progress"
