@@ -3,14 +3,14 @@ package com.mohmedhassan.hessahapp.HomeScreen;
 public class DataModel {
 
     int ImageView,Price;
-    String Descrabtion;
+    String Title;
     double Rating;
 
 
 
-    public DataModel(int imageView, String descrabtion, int price, double rating) {
+    public DataModel(int imageView, String Title, int price, double rating) {
         ImageView = imageView;
-        Descrabtion = descrabtion;
+        Title = Title;
         Price = price;
         Rating = rating;
     }
@@ -31,12 +31,12 @@ public class DataModel {
         Price = price;
     }
 
-    public String getDescrabtion() {
-        return Descrabtion;
+    public String getTitle() {
+        return Title;
     }
 
-    public void setDescrabtion(String descrabtion) {
-        Descrabtion = descrabtion;
+    public void setTitle(String title) {
+        Title = title;
     }
 
     public double getRating() {

@@ -28,14 +28,14 @@ public class AlbukhurAdapter extends RecyclerView.Adapter<AlbukhurAdapter.Custom
 
 
         public ImageView Image_Albukhur;
-        public TextView Descrabtion, Price;
+        public TextView Title, Price;
         public RatingBar ratingBar;
 
         public CustomViewHolder(View view) {
             super(view);
 
             Image_Albukhur = (ImageView) view.findViewById(R.id.Recycle_image_albuhur);
-            Descrabtion = (TextView) view.findViewById(R.id.tv_Recycle_price_albukhur);
+            Title = (TextView) view.findViewById(R.id.tv_Recycle_price_albukhur);
             Price = (TextView) view.findViewById(R.id.tv_Recycle_price_albukhur);
             ratingBar = (RatingBar) view.findViewById(R.id.Recycle_ratingBar_albukhur);
 
@@ -57,7 +57,7 @@ public class AlbukhurAdapter extends RecyclerView.Adapter<AlbukhurAdapter.Custom
         DataModel dataModel = dataModels.get(position);
 
         customViewHolder.Image_Albukhur.setImageResource(dataModel.getImageView());
-        customViewHolder.Descrabtion.setText(dataModel.getDescrabtion());
+        customViewHolder.Title.setText(dataModel.getTitle());
         customViewHolder.Price.setText(dataModel.getPrice());
         customViewHolder.ratingBar.setRating((float) dataModel.getRating());
 
