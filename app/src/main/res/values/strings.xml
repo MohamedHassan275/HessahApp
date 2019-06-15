@@ -20,6 +20,51 @@
 
     <string name="show_pwd" translatable="false">Show Password</string>
 
+    <string name="my_account" translatable="false">My Account</string>
+    <string name="wish_list" translatable="false">Wish List</string>
+    <string name="shopping_cart" translatable="false">Shopping Cart</string>
+    <string name="payment" translatable="false">Payment</string>
+    <string name="number_whats" translatable="false">0599180852</string>
+
+    <string name="home" translatable="false">Home</string>
+    <string name="Oud_and_albukhur" translatable="false">Oud and albukhur</string>
+    <string name="Snapchat" translatable="false">Snapchat</string>
+    <string name="uae_perfumes" translatable="false">UAE Perfumes</string>
+    <string name="offers" translatable="false">offers</string>
+    <string name="hessah_store" translatable="false">Hessah Store</string>
+    <string name="about_hessah_store" translatable="false">There is a proven fact a long time ago is that the content of the page reading what Silaa for the reader to focus on the external form of the text or the form of the paragraphs are placed in the page read. Therefore method is used Lorem Ipsum because it gives a natural distribution -To some extent</string>
+
+    <string name="featured" translatable="false">Featured</string>
+    <string name="bestseller" translatable="false">Bestseller</string>
+    <string name="latest" translatable="false">Latest</string>
+
+    <string name="albukhur1" translatable="false">Ange ou Demon Le Secret Elixir Givenchy for women</string>
+    <string name="albukhur2" translatable="false">Dior Addict Christian Dior for women</string>
+    <string name="albukhur3" translatable="false">Dior Addict Eau de Toilette Christian Dior for women2</string>
+    <string name="albukhur4" translatable="false">Dior Homme Intense Christian Dior for men</string>
+    <string name="albukhur5" translatable="false">Eaudemoiselle de Givenchy Absolu d’Oranger Givenchy for women</string>
+    <string name="albukhur6" translatable="false">Eaudemoiselle de Givenchy Ambre Velours Givenchy for women</string>
+    <string name="albukhur7" translatable="false">Fahrenheit Le Parfum Christian Dior for men</string>
+    <string name="albukhur8" translatable="false">Hypnotic Poison Christian Dior for women 2</string>
+    <string name="albukhur9" translatable="false">Hypnotic Poison Christian Dior for women</string>
+    <string name="albukhur10" translatable="false">Miss Dior Blooming Bouquet Couture Edition Christian Dior for women</string>
+    <string name="albukhur11" translatable="false">Miss Dior Le Parfum Christian Dior for women</string>
+    <string name="albukhur12" translatable="false">Sauvage Christian Dior for men</string>
+
+    <string name="price_albukhur1" translatable="false">350 S.R</string>
+    <string name="price_albukhur2" translatable="false">180 S.R</string>
+    <string name="price_albukhur3" translatable="false">950 S.R</string>
+    <string name="price_albukhur4" translatable="false">356 S.R</string>
+    <string name="price_albukhur5" translatable="false">1,100 S.R</string>
+    <string name="price_albukhur6" translatable="false">385 S.R</string>
+    <string name="price_albukhur7" translatable="false">475 S.R</string>
+    <string name="price_albukhur8" translatable="false">265 S.R</string>
+    <string name="price_albukhur9" translatable="false">410 S.R</string>
+    <string name="price_albukhur10" translatable="false">500 S.R</string>
+    <string name="price_albukhur11" translatable="false">355 S.R</string>
+    <string name="price_albukhur12" translatable="false">250 S.R</string>
+
+
     <string name="last_name" translatable="false">Last Name</string>
     <string name="telephone" translatable="false">Telephone</string>
     <string name="fax" translatable="false">Fax</string>
@@ -59,6 +104,13 @@
         <item>saudi arabia</item>
         <item>Emirates</item>
         <item>kuwait</item>
+    </string-array>
+
+    <string-array name="perfumes_arrray">
+        <item>Perfumes</item>
+        <item>men Perfumes (371)</item>
+        <item>Perfumes of Women (396)</item>
+
     </string-array>
 
     <string-array name="region_State_arrray">
