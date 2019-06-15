@@ -1,46 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
   <LinearLayout
       android:orientation="vertical"
-      android:layout_marginBottom="5dp"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="5dp">
 
       <ImageView
-          android:id="@+id/image_albuhur"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
+          android:id="@+id/Recycle_image_albuhur"
+          android:layout_width="125dp"
+          android:layout_height="125dp"
           android:src="@drawable/albukhur1"
           android:layout_gravity="center"/>
 
       <TextView
-          android:id="@+id/tv_albuhur"
+          android:id="@+id/tv_Recycle_Descrabtion"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_gravity="center"
-          android:layout_marginTop="10dp"
+          android:gravity="center"
+          android:layout_marginTop="5dp"
           android:text="@string/albukhur2"
-          android:textAllCaps="false"
           android:textColor="#161515"
-          android:textSize="15sp" />
+          android:textSize="10sp" />
 
       <TextView
-          android:id="@+id/tv_price_albukhur"
+          android:id="@+id/tv_Recycle_price_albukhur"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_gravity="center"
-          android:layout_marginTop="10dp"
+          android:layout_marginTop="5dp"
+          android:gravity="center"
           android:text="@string/price_albukhur1"
           android:textAllCaps="false"
           android:textColor="#161515"
-          android:textSize="15sp" />
+          android:textSize="12sp" />
 
       <RatingBar
-          android:id="@+id/ratingBar_albukhur"
+          android:id="@+id/Recycle_ratingBar_albukhur"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_gravity="center"

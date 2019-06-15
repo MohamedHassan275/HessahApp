@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeScreen">
+    tools:context=".HomeScreen.HomeScreenActivity">
 
    <ScrollView
        android:layout_width="match_parent"
@@ -364,11 +364,38 @@
          </LinearLayout>
 
            <android.support.v7.widget.RecyclerView
-               android:id="@+id/recyclerview_item_companyDetails"
+               android:id="@+id/recyclerview_item_albukhur"
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:layout_marginTop="10dp" />
 
+           <LinearLayout
+               android:layout_marginTop="5dp"
+               android:gravity="center"
+               android:orientation="horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:layout_width="75dp"
+                   android:layout_height="100dp"
+                   android:src="@drawable/custmer_serveise" />
+
+               <ImageView
+                   android:layout_width="75dp"
+                   android:layout_height="100dp"
+                   android:src="@drawable/deleviry" />
+
+               <ImageView
+                   android:layout_width="75dp"
+                   android:layout_height="100dp"
+                   android:src="@drawable/cheack_in" />
+
+               <ImageView
+                   android:layout_width="75dp"
+                   android:layout_height="100dp"
+                   android:src="@drawable/gift" />
+           </LinearLayout>
        </LinearLayout>
 
 

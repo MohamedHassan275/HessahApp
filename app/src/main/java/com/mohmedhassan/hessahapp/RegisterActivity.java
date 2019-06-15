@@ -15,6 +15,8 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import com.mohmedhassan.hessahapp.HomeScreen.HomeScreenActivity;
+
 public class RegisterActivity extends AppCompatActivity {
 
     Button Btn_Login, Btn_Register;
@@ -113,7 +115,7 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(RegisterActivity.this,HomeScreen.class);
+                Intent intent = new Intent(RegisterActivity.this, HomeScreenActivity.class);
                 startActivity(intent);
 
             }

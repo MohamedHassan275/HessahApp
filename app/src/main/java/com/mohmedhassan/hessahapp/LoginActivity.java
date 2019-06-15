@@ -12,9 +12,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import org.json.JSONObject;
-
-import java.util.HashMap;
+import com.mohmedhassan.hessahapp.HomeScreen.HomeScreenActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -88,7 +86,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(LoginActivity.this, HomeScreen.class);
+                Intent intent = new Intent(LoginActivity.this, HomeScreenActivity.class);
                 startActivity(intent);
 
             }
