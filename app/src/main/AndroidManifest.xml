@@ -22,7 +22,7 @@
             android:name=".SnapChatAvitity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".HomeScreenDetailsActivity"
+            android:name=".HomeScreenDetails.HomeScreenDetailsActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Forgetpassword_Password_Activity"

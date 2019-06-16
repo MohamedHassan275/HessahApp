@@ -1,6 +1,6 @@
 package com.mohmedhassan.hessahapp.HomeScreen;
 
-public class DataModel {
+public class AlbukhurDataModel {
 
     int ImageView,Price;
     String Title;
@@ -8,7 +8,7 @@ public class DataModel {
 
 
 
-    public DataModel(int imageView, String Title, int price, double rating) {
+    public AlbukhurDataModel(int imageView, String Title, int price, double rating) {
         ImageView = imageView;
         Title = Title;
         Price = price;

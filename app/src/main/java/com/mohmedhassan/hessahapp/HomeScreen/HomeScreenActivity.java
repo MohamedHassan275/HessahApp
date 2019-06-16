@@ -17,8 +17,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.mohmedhassan.hessahapp.HomeScreenDetailsActivity;
-import com.mohmedhassan.hessahapp.LoginActivity;
+import com.mohmedhassan.hessahapp.HomeScreenDetails.HomeScreenDetailsActivity;
 import com.mohmedhassan.hessahapp.R;
 import com.mohmedhassan.hessahapp.ShoppingCartActivity;
 import com.mohmedhassan.hessahapp.SnapChatAvitity;
@@ -42,7 +41,7 @@ public class HomeScreenActivity extends AppCompatActivity {
     LinearLayout linear_layout_shopping_cart;
     ImageView ImageView_shopping_cart;
     TextView Tv_snap_chat_homeScreen;
-    ArrayList<DataModel> dataModels = new ArrayList<>();
+    ArrayList<AlbukhurDataModel> dataModels = new ArrayList<>();
     RecyclerView recyclerview_item_albukhur;
     Spinner spinnerPerfumes,spinnerLanguage,spinnerCurrency;
     ArrayAdapter<CharSequence> arrayAdapterPerfumes;
@@ -95,7 +94,7 @@ public class HomeScreenActivity extends AppCompatActivity {
         recyclerview_item_albukhur.addOnItemTouchListener(new RecyclerTouchListener(context, new RecyclerTouchListener.ClickListener() {
             @Override
             public void onClick(android.view.View view, int position) {
-                DataModel dataModel = dataModels.get(position);
+                AlbukhurDataModel dataModel = dataModels.get(position);
                 Toast.makeText(HomeScreenActivity.this, dataModel.getTitle() + " is selected!", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(HomeScreenActivity.this, HomeScreenDetailsActivity.class);
                 startActivity(intent);
@@ -164,40 +163,40 @@ public class HomeScreenActivity extends AppCompatActivity {
 
     private void prepareMovieData() {
 
-        DataModel dataModel = new DataModel(R.drawable.albukhur1,String.valueOf(R.string.albukhur1),R.string.price_albukhur1,Double.valueOf("0"));
+        AlbukhurDataModel dataModel = new AlbukhurDataModel(R.drawable.albukhur1,String.valueOf(R.string.albukhur1),R.string.price_albukhur1,Double.valueOf("0"));
         dataModels.add(dataModel);
 
-        dataModel = new DataModel(R.drawable.albukhur2,String.valueOf(R.string.albukhur2),R.string.price_albukhur2,Double.valueOf("0"));
+        dataModel = new AlbukhurDataModel(R.drawable.albukhur2,String.valueOf(R.string.albukhur2),R.string.price_albukhur2,Double.valueOf("0"));
         dataModels.add(dataModel);
 
-        dataModel = new DataModel(R.drawable.albukhur3,String.valueOf(R.string.albukhur3),R.string.price_albukhur3,Double.valueOf("3.5"));
+        dataModel = new AlbukhurDataModel(R.drawable.albukhur3,String.valueOf(R.string.albukhur3),R.string.price_albukhur3,Double.valueOf("3.5"));
         dataModels.add(dataModel);
 
-        dataModel = new DataModel(R.drawable.albukhur4,String.valueOf(R.string.albukhur4),R.string.price_albukhur4,Double.valueOf("0"));
+        dataModel = new AlbukhurDataModel(R.drawable.albukhur4,String.valueOf(R.string.albukhur4),R.string.price_albukhur4,Double.valueOf("0"));
         dataModels.add(dataModel);
 
-        dataModel = new DataModel(R.drawable.albukhur5,String.valueOf(R.string.albukhur5),R.string.price_albukhur5,Double.valueOf("5"));
+        dataModel = new AlbukhurDataModel(R.drawable.albukhur5,String.valueOf(R.string.albukhur5),R.string.price_albukhur5,Double.valueOf("5"));
         dataModels.add(dataModel);
 
-        dataModel = new DataModel(R.drawable.albukhur6,String.valueOf(R.string.albukhur6),R.string.price_albukhur6,Double.valueOf("0"));
+        dataModel = new AlbukhurDataModel(R.drawable.albukhur6,String.valueOf(R.string.albukhur6),R.string.price_albukhur6,Double.valueOf("0"));
         dataModels.add(dataModel);
 
-        dataModel = new DataModel(R.drawable.albukhur7,String.valueOf(R.string.albukhur7),R.string.price_albukhur7,Double.valueOf("3.75"));
+        dataModel = new AlbukhurDataModel(R.drawable.albukhur7,String.valueOf(R.string.albukhur7),R.string.price_albukhur7,Double.valueOf("3.75"));
         dataModels.add(dataModel);
 
-        dataModel = new DataModel(R.drawable.albukhur8,String.valueOf(R.string.albukhur8),R.string.price_albukhur8,Double.valueOf("0"));
+        dataModel = new AlbukhurDataModel(R.drawable.albukhur8,String.valueOf(R.string.albukhur8),R.string.price_albukhur8,Double.valueOf("0"));
         dataModels.add(dataModel);
 
-        dataModel = new DataModel(R.drawable.albukhur9,String.valueOf(R.string.albukhur9),R.string.price_albukhur9,Double.valueOf("0"));
+        dataModel = new AlbukhurDataModel(R.drawable.albukhur9,String.valueOf(R.string.albukhur9),R.string.price_albukhur9,Double.valueOf("0"));
         dataModels.add(dataModel);
 
-        dataModel = new DataModel(R.drawable.albukhur10,String.valueOf(R.string.albukhur10),R.string.price_albukhur10,Double.valueOf("0"));
+        dataModel = new AlbukhurDataModel(R.drawable.albukhur10,String.valueOf(R.string.albukhur10),R.string.price_albukhur10,Double.valueOf("0"));
         dataModels.add(dataModel);
 
-        dataModel = new DataModel(R.drawable.albukhur11,String.valueOf(R.string.albukhur11),R.string.price_albukhur11,Double.valueOf("0"));
+        dataModel = new AlbukhurDataModel(R.drawable.albukhur11,String.valueOf(R.string.albukhur11),R.string.price_albukhur11,Double.valueOf("0"));
         dataModels.add(dataModel);
 
-        dataModel = new DataModel(R.drawable.albukhur12,String.valueOf(R.string.albukhur12),R.string.price_albukhur12,Double.valueOf("0"));
+        dataModel = new AlbukhurDataModel(R.drawable.albukhur12,String.valueOf(R.string.albukhur12),R.string.price_albukhur12,Double.valueOf("0"));
         dataModels.add(dataModel);
 
 

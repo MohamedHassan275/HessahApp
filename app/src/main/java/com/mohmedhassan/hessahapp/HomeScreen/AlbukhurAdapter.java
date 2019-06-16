@@ -1,7 +1,6 @@
 package com.mohmedhassan.hessahapp.HomeScreen;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,7 +10,6 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.mohmedhassan.hessahapp.HomeScreenDetailsActivity;
 import com.mohmedhassan.hessahapp.R;
 
 import java.util.ArrayList;
@@ -19,9 +17,9 @@ import java.util.ArrayList;
 public class AlbukhurAdapter extends RecyclerView.Adapter<AlbukhurAdapter.CustomViewHolder> {
 
     Context context;
-    ArrayList<DataModel> dataModels;
+    ArrayList<AlbukhurDataModel> dataModels;
 
-    public AlbukhurAdapter(Context context, ArrayList<DataModel> dataModels) {
+    public AlbukhurAdapter(Context context, ArrayList<AlbukhurDataModel> dataModels) {
         this.context = context;
         this.dataModels = dataModels;
     }
@@ -64,7 +62,7 @@ public class AlbukhurAdapter extends RecyclerView.Adapter<AlbukhurAdapter.Custom
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder customViewHolder, int position) {
 
-        DataModel dataModel = dataModels.get(position);
+        AlbukhurDataModel dataModel = dataModels.get(position);
 
         customViewHolder.Image_Albukhur.setImageResource(dataModel.getImageView());
         customViewHolder.Title.setText(dataModel.getTitle());

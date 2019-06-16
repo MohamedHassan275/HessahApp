@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeScreenDetailsActivity">
+    tools:context=".HomeScreenDetails.HomeScreenDetailsActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -316,7 +316,7 @@ for women"
                 android:textStyle="bold" />
 
             <android.support.v7.widget.RecyclerView
-                android:id="@+id/recycle_view_Room"
+                android:id="@+id/recyclerview_item_albukhur_details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp">
