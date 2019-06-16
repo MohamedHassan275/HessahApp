@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
@@ -32,8 +31,10 @@ public class HomeScreenActivity extends AppCompatActivity {
     AlbukhurAdapter albukhurAdapter;
     ArrayList<DataModel> dataModels = new ArrayList<>();
     RecyclerView recyclerview_item_albukhur;
-    Spinner spinnerPerfumes;
-    ArrayAdapter<CharSequence> arrayAdapter;
+    Spinner spinnerPerfumes,spinnerLanguage,spinnerCurrency;
+    ArrayAdapter<CharSequence> arrayAdapterPerfumes;
+    ArrayAdapter<CharSequence> arrayAdapterLanguage;
+    ArrayAdapter<CharSequence> arrayAdapterCurrency;
 
 
     @Override
@@ -42,13 +43,25 @@ public class HomeScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home_screen);
 
         spinnerPerfumes = findViewById(R.id.spinnerPerfumes);
+        spinnerLanguage = findViewById(R.id.spinnerLanguage);
+        spinnerCurrency = findViewById(R.id.spinnerCarrancy);
         recyclerview_item_albukhur = findViewById(R.id.recyclerview_item_albukhur);
         viewPager = (ViewPager) findViewById(R.id.viewPager);
 
-        arrayAdapter = ArrayAdapter.createFromResource(this,
+        arrayAdapterPerfumes = ArrayAdapter.createFromResource(this,
                 R.array.perfumes_arrray , android.R.layout.simple_spinner_item);
-        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerPerfumes.setAdapter(arrayAdapter);
+        arrayAdapterPerfumes.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerPerfumes.setAdapter(arrayAdapterPerfumes);
+
+        arrayAdapterLanguage = ArrayAdapter.createFromResource(this,
+                R.array.language_arrray , android.R.layout.simple_spinner_item);
+        arrayAdapterLanguage.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerLanguage.setAdapter(arrayAdapterLanguage);
+
+        arrayAdapterCurrency = ArrayAdapter.createFromResource(this,
+                R.array.currency_arrray , android.R.layout.simple_spinner_item);
+        arrayAdapterCurrency.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerCurrency.setAdapter(arrayAdapterCurrency);
 
 
 

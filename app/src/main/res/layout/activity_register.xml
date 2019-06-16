@@ -69,7 +69,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:inputType="textPassword"
+                    android:inputType="textEmailAddress"
                     android:singleLine="true"
                     android:ems="10"
                     android:textSize="15sp"

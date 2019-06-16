@@ -9,18 +9,23 @@
         android:roundIcon="@mipmap/logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ShoppingCartActivity"></activity>
+        <activity android:name=".OudAndAlbukhurAcitivity" />
+        <activity android:name=".UAEPerfumeActivty" />
+        <activity android:name=".SnapChatAvitity" />
+        <activity android:name=".HomeScreenDetailsActivity" />
         <activity
             android:name=".Forgetpassword_Password_Activity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ForgetPasswordVerifyCode"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ForgetPassword_Email_Code"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ForgetpasswordEmailActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/AppTheme.NoActionBar">
