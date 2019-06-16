@@ -72,6 +72,52 @@
                         android:textColor="#000"
                         android:textSize="15sp" />
 
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="#949191"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/btn_sign_up_register"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:text="@string/sign_up"
+                            android:textAllCaps="false"
+                            android:textColor="#555557" />
+
+                        <LinearLayout
+                            android:padding="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/wrap"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:background="@drawable/favorite"
+                                android:textColor="#555557" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:padding="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/wrap"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/favorite"
+                                android:textColor="#555557" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
                 </LinearLayout>
 
 
