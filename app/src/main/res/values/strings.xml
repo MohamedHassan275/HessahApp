@@ -15,6 +15,15 @@
     <string name="sign_up" translatable="false">Sign up</string>
     <string name="frist_name" translatable="false">First Name</string>
 
+    <string name="shopping_cart" translatable="false">Shopping Cart</string>
+    <string name="shopping_cart_is_empty" translatable="false">Your shopping cart is empty!</string>
+    <string name="continu" translatable="false">Continue</string>
+
+    <string name="snap_chat" translatable="false">Snapchat</string>
+    <string name="snap_chat_website" translatable="false">https://www.snapchat.com/add/hessah_store</string>
+    <string name="snap_chat_join" translatable="false">أضفني على السناب شات لمتابعة كل جديد في عالم العطور</string>
+    <string name="snap_chat_category" translatable="false">There are no products to list in this category.</string>
+
     <string name="btn_link_signup" translatable="false">Don\'t have an account yet Register !!</string>
     <string name="btn_link_login" translatable="false">Already have an account Login !!</string>
 
@@ -22,7 +31,6 @@
 
     <string name="my_account" translatable="false">My Account</string>
     <string name="wish_list" translatable="false">Wish List</string>
-    <string name="shopping_cart" translatable="false">Shopping Cart</string>
     <string name="payment" translatable="false">Payment</string>
     <string name="number_whats" translatable="false">0599180852</string>
 
@@ -86,6 +94,26 @@
     <string name="forget_password" translatable="false">Forget  Password  ?</string>
     <string name="log_with_in" translatable="false">Log with in</string>
 
+    <string name="size" translatable="false">الحجم</string>
+    <string name="qty" translatable="false">Qty</string>
+    <string name="add_to_card" translatable="false">Add To Card</string>
+    <string name="related_products" translatable="false">Related Products</string>
+    <string name="review" translatable="false">1 reviews </string>
+    <string name="Write_a_review" translatable="false"> Write a review</string>
+    <string name="slach" translatable="false"> / </string>
+    <string name="name" translatable="false">La Nuit Tresor Lancome for women</string>
+    <string name="brand" translatable="false">Brand : </string>
+    <string name="lancôme" translatable="false">Lancôme</string>
+    <string name="product_code" translatable="false">Product Code :  </string>
+    <string name="product_code_name" translatable="false">عطر نسائي</string>
+    <string name="reward_points" translatable="false">Reward Points : </string>
+    <string name="reward_points_number" translatable="false">40</string>
+    <string name="availability" translatable="false">Availability : </string>
+    <string name="availability_name" translatable="false">In Stock</string>
+    <string name="details" translatable="false">The composition is announced as a gourmand aphrodisiac and a love potion created by perfumers Christophe Raynaud and Amandine Marie. It supposedly depicts the dark side of rose and mixes notes of black rose with Tahitian vanilla orchid absolute. There are also accords of natural incense, papyrus, patchouli and litchi praline added to the mix</string>
+    <string name="details_list_item" translatable="false">Lancome launches L Autre Oud in October 2012 as a part of the luxurious and exclusive collectio..</string>
+    <string name="price" translatable="false">£35.69</string>
+
     <string name="profile" translatable="false">profile</string>
     <string name="home_side_menu" translatable="false">Home</string>
     <string name="order_side_menu" translatable="false">Orders</string>
@@ -112,6 +140,15 @@
         <item>Perfumes of Women (396)</item>
 
     </string-array>
+
+    <string-array name="size_arrray">
+        <item>--Please Select--</item>
+        <item>75 ml (+£45.75)</item>
+        <item>50 ml (+£35.50)</item>
+        <item>25 ml</item>
+
+    </string-array>
+
 
     <string-array name="language_arrray">
         <item>Select Language</item>

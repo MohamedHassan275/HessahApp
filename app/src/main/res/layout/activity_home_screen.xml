@@ -108,6 +108,7 @@
                </LinearLayout>
 
                <LinearLayout
+                   android:id="@+id/linear_layout_shopping_cart"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:layout_gravity="center"
@@ -182,6 +183,7 @@
                </android.support.v7.widget.SearchView>
 
                <ImageView
+                   android:id="@+id/ImageView_shopping_cart"
                    android:layout_width="35dp"
                    android:layout_height="35dp"
                    android:layout_gravity="center"
@@ -212,6 +214,7 @@
                    android:prompt="@array/perfumes_arrray" />
 
                <TextView
+                   android:id="@+id/tv_snap_chat_homeScreen"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:layout_gravity="center"

@@ -1,6 +1,7 @@
 package com.mohmedhassan.hessahapp.HomeScreen;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Handler;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -8,10 +9,19 @@ import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import com.mohmedhassan.hessahapp.HomeScreenDetailsActivity;
+import com.mohmedhassan.hessahapp.LoginActivity;
 import com.mohmedhassan.hessahapp.R;
+import com.mohmedhassan.hessahapp.ShoppingCartActivity;
+import com.mohmedhassan.hessahapp.SnapChatAvitity;
 
 import java.util.ArrayList;
 import java.util.Timer;
@@ -29,6 +39,9 @@ public class HomeScreenActivity extends AppCompatActivity {
     Timer timer;
     int NUM_PAGES;
     AlbukhurAdapter albukhurAdapter;
+    LinearLayout linear_layout_shopping_cart;
+    ImageView ImageView_shopping_cart;
+    TextView Tv_snap_chat_homeScreen;
     ArrayList<DataModel> dataModels = new ArrayList<>();
     RecyclerView recyclerview_item_albukhur;
     Spinner spinnerPerfumes,spinnerLanguage,spinnerCurrency;
@@ -45,6 +58,9 @@ public class HomeScreenActivity extends AppCompatActivity {
         spinnerPerfumes = findViewById(R.id.spinnerPerfumes);
         spinnerLanguage = findViewById(R.id.spinnerLanguage);
         spinnerCurrency = findViewById(R.id.spinnerCarrancy);
+        Tv_snap_chat_homeScreen = findViewById(R.id.tv_snap_chat_homeScreen);
+        linear_layout_shopping_cart = findViewById(R.id.linear_layout_shopping_cart);
+        ImageView_shopping_cart = findViewById(R.id.ImageView_shopping_cart);
         recyclerview_item_albukhur = findViewById(R.id.recyclerview_item_albukhur);
         viewPager = (ViewPager) findViewById(R.id.viewPager);
 
@@ -76,6 +92,46 @@ public class HomeScreenActivity extends AppCompatActivity {
         prepareMovieData();
         ScorllPhoto();
 
+        recyclerview_item_albukhur.addOnItemTouchListener(new RecyclerTouchListener(context, new RecyclerTouchListener.ClickListener() {
+            @Override
+            public void onClick(android.view.View view, int position) {
+                DataModel dataModel = dataModels.get(position);
+                Toast.makeText(HomeScreenActivity.this, dataModel.getTitle() + " is selected!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(HomeScreenActivity.this, HomeScreenDetailsActivity.class);
+                startActivity(intent);
+            }
+
+            @Override
+            public void onLongClick(android.view.View view, int position) {
+
+            }
+
+        }, recyclerview_item_albukhur));
+
+        linear_layout_shopping_cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(HomeScreenActivity.this, ShoppingCartActivity.class);
+                startActivity(intent);
+            }
+        });
+        ImageView_shopping_cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(HomeScreenActivity.this, ShoppingCartActivity.class);
+                startActivity(intent);
+            }
+        });
+        Tv_snap_chat_homeScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(HomeScreenActivity.this, SnapChatAvitity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

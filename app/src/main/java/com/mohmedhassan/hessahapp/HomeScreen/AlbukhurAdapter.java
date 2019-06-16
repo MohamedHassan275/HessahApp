@@ -1,6 +1,7 @@
 package com.mohmedhassan.hessahapp.HomeScreen;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.mohmedhassan.hessahapp.HomeScreenDetailsActivity;
 import com.mohmedhassan.hessahapp.R;
 
 import java.util.ArrayList;
@@ -39,6 +41,14 @@ public class AlbukhurAdapter extends RecyclerView.Adapter<AlbukhurAdapter.Custom
             Price = (TextView) view.findViewById(R.id.tv_Recycle_price_albukhur);
             ratingBar = (RatingBar) view.findViewById(R.id.Recycle_ratingBar_albukhur);
 
+            /*itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent intent = new Intent(itemView.getContext(), HomeScreenDetailsActivity.class);
+                    itemView.getContext().startActivity(intent);
+                }
+            });*/
 
 
         }
