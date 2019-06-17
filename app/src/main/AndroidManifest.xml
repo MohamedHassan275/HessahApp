@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WomenPerfumes.WomenPerfumesActivity"></activity>
-        <activity android:name=".ManPerfumes.ManPerfumesActivity" />
+        <activity
+            android:name=".WomenPerfumes.WomenPerfumesActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ManPerfumes.ManPerfumesActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".UAEPerfumes.UAEPerfumesActivity"
             android:theme="@style/AppTheme.NoActionBar" />

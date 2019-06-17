@@ -20,11 +20,13 @@ import android.widget.Toast;
 
 import com.mohmedhassan.hessahapp.HomeScreenDetails.HomeScreenDetailsActivity;
 import com.mohmedhassan.hessahapp.LoginActivity;
+import com.mohmedhassan.hessahapp.ManPerfumes.ManPerfumesActivity;
 import com.mohmedhassan.hessahapp.OudAndAlbukhur.OudAndAlbukhurActivity;
 import com.mohmedhassan.hessahapp.R;
 import com.mohmedhassan.hessahapp.ShoppingCartActivity;
 import com.mohmedhassan.hessahapp.SnapChatAvitity;
 import com.mohmedhassan.hessahapp.UAEPerfumes.UAEPerfumesActivity;
+import com.mohmedhassan.hessahapp.WomenPerfumes.WomenPerfumesActivity;
 
 import java.util.ArrayList;
 import java.util.Timer;
@@ -104,17 +106,18 @@ public class HomeScreenActivity extends AppCompatActivity {
                 String selectedItem = parent.getItemAtPosition(position).toString();
                 if(selectedItem.equals("men Perfumes (371)")){
 
-                    Intent intent = new Intent(HomeScreenActivity.this, OudAndAlbukhurActivity.class);
+                    Intent intent = new Intent(HomeScreenActivity.this, ManPerfumesActivity.class);
                     startActivity(intent);
 
                 }else if (selectedItem.equals("Perfumes of Women (396)")){
 
-                    Intent intent = new Intent(HomeScreenActivity.this, UAEPerfumesActivity.class);
+                    Intent intent = new Intent(HomeScreenActivity.this, WomenPerfumesActivity.class);
                     startActivity(intent);
 
                 }else {
 
-                    Toast.makeText(HomeScreenActivity.this, "Your Chose Not Found", Toast.LENGTH_SHORT).show();
+                 //   Toast.makeText(HomeScreenActivity.this, "Your Chose Not Found", Toast.LENGTH_SHORT).show();
+
                 }
 
 
