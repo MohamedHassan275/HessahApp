@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="177dp"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -25,12 +25,12 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/ImageView_reycleView_oud_ListItem"
+                    android:id="@+id/ImageView_reycleView_perfumes_ListItem"
                     android:layout_width="75dp"
                     android:layout_height="75dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
-                    android:src="@drawable/oud1" />
+                    android:src="@drawable/perfum1" />
 
 
                 <LinearLayout
@@ -41,7 +41,7 @@
 
 
                     <TextView
-                        android:id="@+id/Tv__reycleView_name_oud_ListItem"
+                        android:id="@+id/Tv__reycleView_name_perfumes_ListItem"
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
                         android:textSize="12sp" />
 
                     <TextView
-                        android:id="@+id/Tv__reycleView_price_oud_ListItem"
+                        android:id="@+id/Tv__reycleView_price_perfumes_ListItem"
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -107,5 +107,6 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
     </LinearLayout>
+
 
 </LinearLayout>

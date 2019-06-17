@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".OudAndAlbukhur.OudAndAlbukhurActivity"
+            android:name=".UAEPerfumes.UAEPerfumesActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
-            android:name=".ShoppingCartActivity"
+            android:name=".OudAndAlbukhur.OudAndAlbukhurActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".OudAndAlbukhurAcitivity"
+            android:name=".ShoppingCartActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".UAEPerfumeActivty"

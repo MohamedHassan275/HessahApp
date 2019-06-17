@@ -19,10 +19,10 @@ import android.widget.Toast;
 
 import com.mohmedhassan.hessahapp.HomeScreenDetails.HomeScreenDetailsActivity;
 import com.mohmedhassan.hessahapp.OudAndAlbukhur.OudAndAlbukhurActivity;
-import com.mohmedhassan.hessahapp.OudAndAlbukhurAcitivity;
 import com.mohmedhassan.hessahapp.R;
 import com.mohmedhassan.hessahapp.ShoppingCartActivity;
 import com.mohmedhassan.hessahapp.SnapChatAvitity;
+import com.mohmedhassan.hessahapp.UAEPerfumes.UAEPerfumesActivity;
 
 import java.util.ArrayList;
 import java.util.Timer;
@@ -140,6 +140,14 @@ public class HomeScreenActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(HomeScreenActivity.this, OudAndAlbukhurActivity.class);
+                startActivity(intent);
+            }
+        });
+        Tv_Perfum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(HomeScreenActivity.this, UAEPerfumesActivity.class);
                 startActivity(intent);
             }
         });

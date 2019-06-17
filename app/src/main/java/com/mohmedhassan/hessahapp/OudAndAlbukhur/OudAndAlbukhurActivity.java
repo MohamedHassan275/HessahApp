@@ -12,9 +12,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
-import com.mohmedhassan.hessahapp.HomeScreen.AlbukhurAdapter;
-import com.mohmedhassan.hessahapp.HomeScreenDetails.Albukhur_ItemAdapter;
-import com.mohmedhassan.hessahapp.HomeScreenDetails.Albukhur_Item_DataModel;
 import com.mohmedhassan.hessahapp.R;
 
 import java.util.ArrayList;
@@ -22,8 +19,8 @@ import java.util.ArrayList;
 public class OudAndAlbukhurActivity extends AppCompatActivity {
 
     Context context;
-    Spinner spinnerSortBy_Oud,spinnerSortBy_Show;
-    ImageView ImageViewListItem,ImageViewGridItem;
+    Spinner spinnerSortBy_Oud, spinnerShow_Oud;
+    ImageView ImageViewListItemOud,ImageViewGridItemOud;
     OudAdapter oudAdapter;
     ArrayList<OudDataModel> oudDataModels = new ArrayList<>();
     RecyclerView recyclerview_OudAndAlbukhur_item;
@@ -35,9 +32,9 @@ public class OudAndAlbukhurActivity extends AppCompatActivity {
         setContentView(R.layout.activity_oud_and_albukhur);
 
         spinnerSortBy_Oud = findViewById(R.id.spinnerSortBy_Oud);
-        spinnerSortBy_Show = findViewById(R.id.spinnerShow_Oud);
-        ImageViewListItem = findViewById(R.id.ImageView_oud_ListItem);
-        ImageViewGridItem = findViewById(R.id.ImageView_oud_GridItem);
+        spinnerShow_Oud = findViewById(R.id.spinnerShow_Oud);
+        ImageViewListItemOud = findViewById(R.id.ImageView_oud_ListItem);
+        ImageViewGridItemOud = findViewById(R.id.ImageView_oud_GridItem);
         recyclerview_OudAndAlbukhur_item = findViewById(R.id.recyclerview_OudAndAlbukhur_details);
 
         oudAdapter = new OudAdapter(context, oudDataModels);
@@ -57,11 +54,11 @@ public class OudAndAlbukhurActivity extends AppCompatActivity {
         arrayAdapterShowItem = ArrayAdapter.createFromResource(this,
                 R.array.oud_show_iten_arrray , android.R.layout.simple_spinner_item);
         arrayAdapterShowItem.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerSortBy_Show.setAdapter(arrayAdapterShowItem);
+        spinnerShow_Oud.setAdapter(arrayAdapterShowItem);
 
         prepareOudAndAlbukhur();
 
-        ImageViewListItem.setOnClickListener(new View.OnClickListener() {
+        ImageViewListItemOud.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -75,7 +72,7 @@ public class OudAndAlbukhurActivity extends AppCompatActivity {
             }
         });
 
-        ImageViewGridItem.setOnClickListener(new View.OnClickListener() {
+        ImageViewGridItemOud.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

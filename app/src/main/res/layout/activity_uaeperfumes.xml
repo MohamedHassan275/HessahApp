@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OudAndAlbukhur.OudAndAlbukhurActivity">
+    tools:context=".UAEPerfumes.UAEPerfumesActivity">
 
     <LinearLayout
         android:orientation="vertical"
@@ -29,7 +29,7 @@
                     android:visibility="invisible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/oud_and_albukhur"
+                    android:text="@string/perfumes"
                     android:layout_gravity="center"
                     android:textColor="#000"
                     android:textSize="17sp" />
@@ -52,14 +52,14 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:id="@+id/ImageView_oud_ListItem"
+                        android:id="@+id/ImageView_perfumes_ListItem"
                         android:layout_margin="5dp"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:src="@drawable/list_item"/>
 
                     <ImageView
-                        android:id="@+id/ImageView_oud_GridItem"
+                        android:id="@+id/ImageView_perfumes_GridItem"
                         android:layout_margin="5dp"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
@@ -84,7 +84,7 @@
                     android:textSize="15sp" />
 
                 <Spinner
-                    android:id="@+id/spinnerSortBy_Oud"
+                    android:id="@+id/spinnerSortBy_perfumes"
                     android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
                     android:textSize="15sp" />
 
                 <Spinner
-                    android:id="@+id/spinnerShow_Oud"
+                    android:id="@+id/spinnerShow_perfumes"
                     android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -111,7 +111,7 @@
 
         <android.support.v7.widget.RecyclerView
 
-            android:id="@+id/recyclerview_OudAndAlbukhur_details"
+            android:id="@+id/recyclerview_perfumes_details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
@@ -119,4 +119,5 @@
         </android.support.v7.widget.RecyclerView>
 
     </LinearLayout>
+
 </LinearLayout>
