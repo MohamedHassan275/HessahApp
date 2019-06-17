@@ -1,72 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/layout_adapter"
-    android:layout_width="275dp"
+    android:layout_width="177dp"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_margin="3dp"
-        android:layout_width="260dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <android.support.v7.widget.CardView
             android:id="@+id/cardViewRoom"
-            android:layout_width="260dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             app:cardElevation="5dp"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="15dp"
             android:orientation="vertical"
             app:cardCornerRadius="7dp">
 
             <LinearLayout
-                android:layout_width="260dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="25dp"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/ImageViewListItem"
-                    android:layout_width="250dp"
+                    android:id="@+id/ImageView_reycleView_oud_ListItem"
+                    android:layout_width="75dp"
                     android:layout_height="75dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
-                    android:src="@drawable/albukhur1" />
+                    android:src="@drawable/oud1" />
 
 
                 <LinearLayout
-                    android:layout_width="255dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:gravity="center"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/Tv_NameListItem"
-                        android:layout_marginTop="10dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="@string/name"
-                        android:textColor="#000"
-                        android:textSize="15sp" />
 
                     <TextView
-                        android:id="@+id/Tv_DetailsListItem"
-                        android:layout_marginTop="10dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="@string/details_list_item"
-                        android:textColor="#000"
-                        android:textSize="15sp" />
-
-                    <TextView
-                        android:id="@+id/Tv_priceListItem"
+                        android:id="@+id/Tv__reycleView_name_oud_ListItem"
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -75,10 +50,31 @@
                         android:textColor="#000"
                         android:textSize="15sp" />
 
-                    <LinearLayout
-                        android:layout_width="255dp"
+                    <TextView
+                        android:id="@+id/Tv__reycleView_price_oud_ListItem"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#FFFFFF"
+                        android:layout_gravity="center"
+                        android:text="@string/price"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="....."
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:background="#EEEEEE"
                         android:orientation="horizontal">
 
                         <TextView
@@ -86,20 +82,21 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/add_to_card"
+                            android:gravity="center"
                             android:layout_gravity="center"
                             android:textColor="#000"
                             android:textSize="15sp" />
 
                         <ImageView
                             android:layout_weight="1"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
                             android:src="@drawable/favorite"/>
 
                         <ImageView
                             android:layout_weight="1"
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
                             android:src="@drawable/compare"/>
                     </LinearLayout>
 
@@ -110,6 +107,5 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
     </LinearLayout>
-
 
 </LinearLayout>

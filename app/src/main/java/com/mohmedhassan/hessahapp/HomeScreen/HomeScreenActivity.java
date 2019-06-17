@@ -18,6 +18,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.mohmedhassan.hessahapp.HomeScreenDetails.HomeScreenDetailsActivity;
+import com.mohmedhassan.hessahapp.OudAndAlbukhur.OudAndAlbukhurActivity;
+import com.mohmedhassan.hessahapp.OudAndAlbukhurAcitivity;
 import com.mohmedhassan.hessahapp.R;
 import com.mohmedhassan.hessahapp.ShoppingCartActivity;
 import com.mohmedhassan.hessahapp.SnapChatAvitity;
@@ -40,7 +42,7 @@ public class HomeScreenActivity extends AppCompatActivity {
     AlbukhurAdapter albukhurAdapter;
     LinearLayout linear_layout_shopping_cart;
     ImageView ImageView_shopping_cart;
-    TextView Tv_snap_chat_homeScreen;
+    TextView Tv_snap_chat_homeScreen,Tv_oud_albukhur,Tv_Perfum;
     ArrayList<AlbukhurDataModel> dataModels = new ArrayList<>();
     RecyclerView recyclerview_item_albukhur;
     Spinner spinnerPerfumes,spinnerLanguage,spinnerCurrency;
@@ -58,6 +60,8 @@ public class HomeScreenActivity extends AppCompatActivity {
         spinnerLanguage = findViewById(R.id.spinnerLanguage);
         spinnerCurrency = findViewById(R.id.spinnerCarrancy);
         Tv_snap_chat_homeScreen = findViewById(R.id.tv_snap_chat_homeScreen);
+        Tv_oud_albukhur = findViewById(R.id.tv_oud_albukhur);
+        Tv_Perfum = findViewById(R.id.tv_perfumUAE);
         linear_layout_shopping_cart = findViewById(R.id.linear_layout_shopping_cart);
         ImageView_shopping_cart = findViewById(R.id.ImageView_shopping_cart);
         recyclerview_item_albukhur = findViewById(R.id.recyclerview_item_albukhur);
@@ -128,6 +132,14 @@ public class HomeScreenActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(HomeScreenActivity.this, SnapChatAvitity.class);
+                startActivity(intent);
+            }
+        });
+        Tv_oud_albukhur.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(HomeScreenActivity.this, OudAndAlbukhurActivity.class);
                 startActivity(intent);
             }
         });

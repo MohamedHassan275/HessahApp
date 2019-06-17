@@ -114,6 +114,11 @@
     <string name="details_list_item" translatable="false">Lancome launches L Autre Oud in October 2012 as a part of the luxurious and exclusive collectio..</string>
     <string name="price" translatable="false">£35.69</string>
 
+    <string name="oud_and_albukhur" translatable="false">Oud and albukhur</string>
+    <string name="product_compare" translatable="false">Product Compare (0)</string>
+    <string name="sort_by" translatable="false">Sort By:</string>
+    <string name="show" translatable="false">Show:</string>
+
     <string name="profile" translatable="false">profile</string>
     <string name="home_side_menu" translatable="false">Home</string>
     <string name="order_side_menu" translatable="false">Orders</string>
@@ -174,6 +179,27 @@
         <item>ryade</item>
         <item>fujairah</item>
         <item>farwaniyah</item>
+    </string-array>
+
+    <string-array name="oud_sort_by_arrray">
+        <item>Default</item>
+        <item>Name (A - Z)</item>
+        <item>Name (Z - A)</item>
+        <item>Price (High - Low)</item>
+        <item>Price (Low - High)</item>
+        <item>Rating (Highest - Lowest)</item>
+        <item>Rating (Lowest - Highest)</item>
+        <item>Model (A - Z)</item>
+        <item>Model (Z - A)</item>
+    </string-array>
+
+    <string-array name="oud_show_iten_arrray">
+        <item>15</item>
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+
     </string-array>
 
 
