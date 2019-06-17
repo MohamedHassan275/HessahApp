@@ -10,6 +10,7 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -18,6 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.mohmedhassan.hessahapp.HomeScreenDetails.HomeScreenDetailsActivity;
+import com.mohmedhassan.hessahapp.LoginActivity;
 import com.mohmedhassan.hessahapp.OudAndAlbukhur.OudAndAlbukhurActivity;
 import com.mohmedhassan.hessahapp.R;
 import com.mohmedhassan.hessahapp.ShoppingCartActivity;
@@ -56,7 +58,7 @@ public class HomeScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
 
-        spinnerPerfumes = findViewById(R.id.spinnerPerfumes);
+        spinnerPerfumes = findViewById(R.id.spinnerPerfumesManAndWomen);
         spinnerLanguage = findViewById(R.id.spinnerLanguage);
         spinnerCurrency = findViewById(R.id.spinnerCarrancy);
         Tv_snap_chat_homeScreen = findViewById(R.id.tv_snap_chat_homeScreen);
@@ -94,6 +96,35 @@ public class HomeScreenActivity extends AppCompatActivity {
 
         prepareMovieData();
         ScorllPhoto();
+
+        spinnerPerfumes.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+                String selectedItem = parent.getItemAtPosition(position).toString();
+                if(selectedItem.equals("men Perfumes (371)")){
+
+                    Intent intent = new Intent(HomeScreenActivity.this, OudAndAlbukhurActivity.class);
+                    startActivity(intent);
+
+                }else if (selectedItem.equals("Perfumes of Women (396)")){
+
+                    Intent intent = new Intent(HomeScreenActivity.this, UAEPerfumesActivity.class);
+                    startActivity(intent);
+
+                }else {
+
+                    Toast.makeText(HomeScreenActivity.this, "Your Chose Not Found", Toast.LENGTH_SHORT).show();
+                }
+
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
         recyclerview_item_albukhur.addOnItemTouchListener(new RecyclerTouchListener(context, new RecyclerTouchListener.ClickListener() {
             @Override

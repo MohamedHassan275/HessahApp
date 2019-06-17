@@ -207,7 +207,7 @@
                    android:textSize="15sp" />
 
                <Spinner
-                   android:id="@+id/spinnerPerfumes"
+                   android:id="@+id/spinnerPerfumesManAndWomen"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
                    android:layout_gravity="center"
